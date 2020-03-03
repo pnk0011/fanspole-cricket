@@ -166,7 +166,10 @@ app.service('commonService', function () {
       }
     }
     $scope.addTeamScreen = () => {
+      if($scope.saveTeam == true)
       $location.path("/addTeamPage");
+       else
+      alert('select Caption and Vice-Caption !!'); 
     }
     $scope.goback = () => {
       $window.history.back();
